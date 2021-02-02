@@ -123,3 +123,71 @@ int main()
 	//return 0;
 }
 
+#define _CRT_SECURE_NO_WARNINGS 
+#include <iostream>
+#include <math.h>
+
+//void Swap(int* pa, int* pb)
+//{
+//	int tmp = 0;
+//	*pa;
+//	*pb;
+//	tmp = *pa;
+//	*pa = *pb;
+//	*pb = tmp;
+//}
+//
+//int main()
+//{
+//	int a = 10;
+//	int b = 20;
+//	Swap(&a, &b);
+//	printf("a=%d\nb=%d\n", a, b);
+//	return 0;
+//}
+
+//int is_prime(int n)
+//{
+//	int j = 0;
+//	for (j = 2; j <=sqrt(n); j++)
+//	{
+//		if (n%j == 0)
+//			return 0;
+//	}
+//	return 1;
+//}
+//
+//int main()
+//{
+//	int i = 0;
+//	for (i = 100; i <= 200; i++)
+//	{
+//		if (is_prime(i) == 1)
+//			printf("%d ", i);
+//	}
+//	return 0;
+//}
+//
+
+int is_leap_year(int y)
+{
+	if (y % 4 == 0 && y % 100 != 0 || y % 400 == 0)
+		return 1;
+	else
+		return 0;
+}
+
+int main()
+{
+	int year = 0;
+	for (year = 1000; year <= 2000; year++)
+	{
+		if (1 == is_leap_year(year))
+		{
+			printf("%d ", year);
+		}
+	}
+}
+
+
+
